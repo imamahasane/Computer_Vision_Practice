@@ -1,0 +1,15 @@
+import cv2
+
+cap = cv2.VideoCapture(1)
+cap.set(3, 640)
+cap.set(4, 480)
+# brightness
+cap.set(10, 100)
+
+
+while True:
+    success, img = cv2.read()
+    cv2.imshow("Video", img)
+
+    if cv2.waitKey(1) & 0xFF == ord("q"):
+        break
