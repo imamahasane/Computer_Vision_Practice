@@ -1,1 +1,1 @@
-# OpenCV_Practice
+# Computer_Vision_Practice
